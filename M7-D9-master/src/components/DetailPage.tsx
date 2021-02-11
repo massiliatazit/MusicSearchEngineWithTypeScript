@@ -144,14 +144,14 @@ class DetailPage extends Component<RouteComponentProps, State> {
         </div>
       </div>
       
-                <ListGroup variant="flush" id="tracklistRight">
+                <ListGroup variant="flush" id="tracklist">
                   {this.state.albumTracks.length > 0 &&
                     this.state.albumTracks.map((track, index) => (
                       <ListGroup.Item
                         key={index}
                         className="trackListing d-flex justify-content-between"
-                      >
-                        <span className="trackName">{track.title}</span> <BsMusicNote className="mr-2"/>
+                      > <BsMusicNote className="mr-0"/>
+                        <span className="trackName text-left">{track.title}</span> 
                         <span className="trackLength">{((track.duration % 60) / 10).toFixed(2)}</span>
                       </ListGroup.Item>
                     ))}
