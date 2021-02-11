@@ -20,7 +20,13 @@ class SearchBar extends Component<Props, State> {
     this.setState({ query: "" });
   };
   
+ handlekeypressed=(e: React.KeyboardEvent<HTMLDivElement>)=>{
+   if(e.key=="Enter"){
+     this.props.search(this.state.query);
+     this.setState({query:""})
 
+   }
+ }
   render() {
     return (
       <Form onSubmit={this.handleSubmit} className="w-75">
@@ -30,6 +36,7 @@ class SearchBar extends Component<Props, State> {
             placeholder="What would you like to find?"
             value={this.state.query}
             onChange={(e) => this.setState({ query: e.currentTarget.value })}
+            onKeyPress={this.handlekeypressed}
           />
           <Button variant="dark" type="submit">
             Submit

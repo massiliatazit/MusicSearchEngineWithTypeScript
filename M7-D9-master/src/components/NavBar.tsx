@@ -12,16 +12,15 @@ import { withRouter, RouteComponentProps } from "react-router-dom";
 class NavBar extends Component<RouteComponentProps> {
   render() {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar expand="lg" className="navb">
         <Navbar.Brand onClick={() => this.props.history.push("/")}>
         
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            {/* <Nav.Link>Ya</Nav.Link>
-            <Nav.Link>Like</Nav.Link> */}
-            <NavDropdown title="pop?" id="basic-nav-dropdown">
+          <Nav className="ml-auto">
+           
+            <NavDropdown title="Genre" id="basic-nav-dropdown">
               <NavDropdown.Item>
                
               </NavDropdown.Item>

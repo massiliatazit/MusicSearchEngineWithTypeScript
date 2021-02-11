@@ -51,3 +51,65 @@ figure .image{
 .navbar-brand {
   cursor: pointer;
 }
+
+.song-details {
+  width: 90%;
+  margin: 50px auto;
+}
+.song-details.back-link a:link, .song-details.back-link a:visited {
+  display: block;
+  margin-bottom: 1rem;
+}
+.song-details.back-link a:hover, .song-details.back-link a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.song-details.title {
+  font-weight: bold;
+}
+.song-details.main-section {
+  display: flex;
+}
+.song-details.main-section .left-section {
+  flex: 2;
+  margin: 0;
+  margin-right: 2rem;
+}
+.song-details.main-section .right-section {
+  flex: 1;
+  margin: 5rem 0 0 0;
+}
+.song-details.main-section .right-section > div {
+  margin-bottom: 5rem;
+}
+.song-details.main-section .right-section h3 {
+  margin-bottom: 1rem;
+}
+.albumImage {
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.song-details.main-section .right-section .company-details .company-name {
+  margin-top: 1rem;
+}
+.song-details.main-section .right-section .company-details .company-url {
+  word-break: break-all;
+}
+.job-details .main-section .right-section .how-to-apply a {
+  display: inline-block;
+  word-break: break-all;
+}
+#tracklistRight {
+  overflow-y: scroll;
+  height: 470px;
+}
+
+.trackListing {
+  cursor: pointer;
+}
+
+.trackName,
+.trackLength {
+  font-size: 12px;
+}

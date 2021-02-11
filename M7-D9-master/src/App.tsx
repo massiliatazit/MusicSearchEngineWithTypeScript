@@ -11,7 +11,7 @@ function App() {
     <>
       <NavBar />
       <Route path="/" exact render={(props) => <HomePage {...props} />} />
-      <Route path="/song/:id" render={(props) => <DetailPage {...props} />} />
+      <Route path="/Detailsong/:id" render={(props) => <DetailPage {...props} />} />
     </>
   );
 }

@@ -9,7 +9,7 @@ function InfoCard(props: infoProps) {
   return (
     <Card
       className="result"
-      onClick={() => props.history.push("/song/" + props.info.id)}
+      onClick={() => props.history.push("/Detailsong/" + props.info.id)}
     >
       <div className="resultCard">
 <figure className="image is-48x48">
