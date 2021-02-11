@@ -1,0 +1,53 @@
+div.dropdown-menu.show {
+  background-color: black;
+}
+body {
+  background-color:#827081 !important;
+}
+.infoCard.card {
+  background-color: transparent;
+  border: none;
+}
+.infoCard .card-body {
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.infoCard .card-title {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: rgba(2, 2, 2, 0.479);
+  font-size: 1rem;
+}
+
+.infoCard .card-text {
+  font-size: 0.9rem;
+  color: rgba(24, 24, 24, 0.5);
+}
+
+.result .card-img-top {
+  border-radius: 10px;
+  cursor: pointer;
+}
+.resultCard{
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 8px 7px 13px 0px #dadada;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+.result{
+  display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+}
+figure .image{
+  padding-bottom: 15px;
+}
+.navbar-brand {
+  cursor: pointer;
+}
